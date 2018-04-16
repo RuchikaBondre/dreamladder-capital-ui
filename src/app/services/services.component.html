@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select placeholder="Select Service">
+    <mat-option *ngFor="let service of services" [value]="service">
+      {{service}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
