@@ -1,5 +1,5 @@
 <nav mat-tab-nav-bar>
-  <span mat-tab-link>
+  <span mat-tab-link [routerLink]='home' routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
     <mat-icon>home</mat-icon>
   </span>
   <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
