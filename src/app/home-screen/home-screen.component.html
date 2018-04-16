@@ -1,49 +1,13 @@
-<!--mat-tab-group>
-  <mat-tab label="Home">
-    <ng-template mat-tab-label>
-      <mat-icon>home</mat-icon>
-    </ng-template>
-  </mat-tab>
-  <mat-tab label="About Us">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </mat-tab>
-  <mat-tab label="Whats for you">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </mat-tab>
-  <mat-tab label="Services" [matMenuTriggerFor]="appMenu">
-      <mat-menu #appMenu="matMenu">
-          <button mat-menu-item>Settings</button>
-          <button mat-menu-item>Help</button>
-        </mat-menu>
-  </mat-tab>
-
-  <mat-tab label="Learning/Blogs">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </mat-tab>
-  <mat-tab label="Testimonial">
-    <h1>Some more tab content</h1>
-    <p>...</p>
-  </mat-tab>
-  <mat-tab label="account">
-    <ng-template mat-tab-label>
-      <mat-icon>help</mat-icon>
-    </ng-template>
-  </mat-tab>
-</mat-tab-group-->
-
 <nav mat-tab-nav-bar>
-  
-  <a mat-tab-link
-     *ngFor="let link of navLinks"
-     [routerLink]="link.path"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
+  <span mat-tab-link>
+    <mat-icon>home</mat-icon>
+  </span>
+  <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
     {{link.label}}
   </a>
+  <span mat-tab-link>
+    <mat-icon>help</mat-icon>
+  </span>
 </nav>
 
 <router-outlet></router-outlet>
-
