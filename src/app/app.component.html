@@ -1,35 +1,33 @@
 <nav mat-tab-nav-bar>
-    <span mat-tab-link routerLink='' routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      <mat-icon>home</mat-icon>
-    </span>
-    <a mat-tab-link routerLink="about-us" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      About Us
-    </a>
-    <a mat-tab-link routerLink="whats-for-you" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      Whats for you
-    </a>
-    <a mat-tab-link [matMenuTriggerFor]="servicesMenu">Services</a>
-    <mat-menu #servicesMenu="matMenu">
-      <button mat-menu-item routerLink="services/mutual-funds" routerLinkActive #rla="routerLinkActive">Mutual Funds</button>
-      <button mat-menu-item routerLink="services/comprehensive-wealth-advisory" routerLinkActive #rla="routerLinkActive">Comprehensive Wealth Advisory</button>
-      <button mat-menu-item routerLink="services/equity" routerLinkActive #rla="routerLinkActive">Equity</button>
-      <button mat-menu-item routerLink="services/corporate-solutions" routerLinkActive #rla="routerLinkActive">Corporate Solutions</button>
-    </mat-menu>
-    <a mat-tab-link routerLink="learning-blogs" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      Learning/Blogs
-    </a>
-    <a mat-tab-link routerLink="testimonial" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      Testimonial
-    </a>
-    <span mat-tab-link [matMenuTriggerFor]="optionsMenu">
-      <mat-icon>account_circle</mat-icon>
-    </span>
-    <mat-menu #optionsMenu="matMenu">
-      <button mat-menu-item routerLink="options/my-account" routerLinkActive #rla="routerLinkActive">My Account</button>
-      <button mat-menu-item routerLink="options/contact-us" routerLinkActive #rla="routerLinkActive">Contact Us</button>
-      <button mat-menu-item routerLink="options/robo-advisory" routerLinkActive #rla="routerLinkActive">Robo advisory (Metta Money)</button>
-    </mat-menu>
-  
-  </nav>
-  
-  <router-outlet></router-outlet>
+  <span mat-tab-link routerLink=''>
+    <mat-icon>home</mat-icon>
+  </span>
+  <a mat-tab-link routerLink="about-us">
+    About Us
+  </a>
+  <a mat-tab-link routerLink="whats-for-you">
+    Whats for you
+  </a>
+  <a mat-tab-link [matMenuTriggerFor]="servicesMenu">Services</a>
+  <mat-menu #servicesMenu="matMenu">
+    <button mat-menu-item routerLink="services/mutual-funds">Mutual Funds</button>
+    <button mat-menu-item routerLink="services/comprehensive-wealth-advisory">Comprehensive Wealth Advisory</button>
+    <button mat-menu-item routerLink="services/equity">Equity</button>
+    <button mat-menu-item routerLink="services/corporate-solutions">Corporate Solutions</button>
+  </mat-menu>
+  <a mat-tab-link routerLink="learning-blogs">
+    Learning/Blogs
+  </a>
+  <a mat-tab-link routerLink="testimonial">
+    Testimonial
+  </a>
+  <span mat-tab-link [matMenuTriggerFor]="optionsMenu">
+    <mat-icon>account_circle</mat-icon>
+  </span>
+  <mat-menu #optionsMenu="matMenu">
+    <button mat-menu-item routerLink="options/my-account">My Account</button>
+    <button mat-menu-item routerLink="options/contact-us">Contact Us</button>
+    <button mat-menu-item routerLink="options/robo-advisory">Robo advisory (Metta Money)</button>
+  </mat-menu>
+</nav>
+<router-outlet></router-outlet>
