@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeScreenComponent implements OnInit {
   
-  title = "Dreamladder Capital";
   constructor() { }
 
   ngOnInit() {
