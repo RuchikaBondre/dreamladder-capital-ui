@@ -7,32 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeScreenComponent implements OnInit {
   
+  title = "Dreamladder Capital";
   constructor() { }
 
   ngOnInit() {
   }
 
-  navLinks = [
-    {
-      "label":"About Us",
-      "path":"about-us"
-    },
-    {
-      "label":"Whats for you",
-      "path":"whats-for-you"
-    },
-    {
-      "label":"Services",
-      "path":"services"
-    },
-    {
-      "label":"Learning/Blogs",
-      "path":"learning-blogs"
-    },
-    {
-      "label":"Testimonial",
-      "path":"testimonial"
-    }
-                    
-  ];
 }

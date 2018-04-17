@@ -1,13 +1,6 @@
-<nav mat-tab-nav-bar>
-  <span mat-tab-link [routerLink]='home' routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-    <mat-icon>home</mat-icon>
-  </span>
-  <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-    {{link.label}}
-  </a>
-  <span mat-tab-link>
-    <mat-icon>help</mat-icon>
-  </span>
-</nav>
-
-<router-outlet></router-outlet>
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
